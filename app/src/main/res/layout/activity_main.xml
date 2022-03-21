@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextureView
+            android:id="@+id/textureViewFront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_frontvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="front video"
+            android:layout_gravity="bottom|center"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <TextureView
+        android:id="@+id/textureViewRear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="#B62020"
+            android:textSize="26sp"
+            android:text="hi"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="top|center"/>
+
+        <Button
+            android:id="@+id/bt_rearvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rear video"
+            android:layout_gravity="bottom|center"/>
+
+    </FrameLayout>
+
+</LinearLayout>
